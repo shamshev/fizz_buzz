@@ -1,0 +1,14 @@
+public fizz_buzz () {
+    1.upto(100) {
+        def answer = ""
+        if (it%3 == 0) { answer += "fizz"}
+        if (it%5 == 0) { answer += "buzz"}
+        if (answer == "") { answer = it.toString()}
+        println answer
+    }
+}
+
+task main {
+    description 'Export dump'
+    fizz_buzz()
+}
