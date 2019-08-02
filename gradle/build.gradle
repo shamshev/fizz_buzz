@@ -9,6 +9,6 @@ public fizz_buzz () {
 }
 
 task main {
-    description 'Export dump'
+    description 'fizz buzz'
     fizz_buzz()
 }
