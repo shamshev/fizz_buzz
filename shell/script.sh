@@ -14,4 +14,14 @@ function main {
   done
 }
 
-main "$@"
+function main2 {
+  for i in {1..100}; do
+    local answer=""
+    [[ ${i}%3 -eq 0 ]] && answer="fizz"
+    [[ ${i}%5 -eq 0 ]] && answer="${answer}buzz"
+    [[ -z ${answer} ]] && answer="${i}"
+    echo "${answer}"
+  done
+}
+
+main2 "$@"
